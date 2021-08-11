@@ -1,8 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+// import { observable, action, computed, autorun } from 'mobx';
 import reportWebVitals from './reportWebVitals';
+
+// class Store {
+//   @observable list = [];
+//   @computed get total() {
+//     return this.list.length;
+//   }
+//   @action change () {
+//     this.list.push();
+//   }
+// };
+// const mstore = new Store();
+
+// autorun(() => {
+//   console.log(mstore.total);
+// });
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,8 +25,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

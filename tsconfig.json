@@ -18,9 +18,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@views/*": ["src/views/*"],
+    },
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": ["node_modules"],
+  
 }

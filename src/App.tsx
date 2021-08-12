@@ -1,16 +1,15 @@
-import React, { FC, lazy } from 'react';
-import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
-
-const Demo = lazy(() => import('@views/demo'));
+import React, { FC } from 'react';
+import RouteConfig from "@routes/router.config";
+import RouteView from "@routes/RouteView";
+import { BrowserRouter } from "react-router-dom";
+import "./App.scss";
 
 const loading = () => <div className="loader" />;
 
 const App: FC = () => {
    return <BrowserRouter>
       <React.Suspense fallback={loading()}>
-        <Switch>
-          <Route exact path="/login" component={Demo} />
-        </Switch>
+         <RouteView children={RouteConfig}></RouteView>
       </React.Suspense>
     </BrowserRouter>;
 };

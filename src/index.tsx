@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+// import {} from ''
 // import { observable, action, computed, autorun } from 'mobx';
 import reportWebVitals from './reportWebVitals';
+import 'antd/dist/antd.css';
 
 // class Store {
 //   @observable list = [];

@@ -7,4 +7,5 @@ module.exports = {
   '@/': paths.appSrc,
   '@components': $('components'),
   '@views': $('views'),
-};
+  '@routes': $('routes')
+}

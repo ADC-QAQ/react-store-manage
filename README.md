@@ -36,7 +36,8 @@ eslint + husky + prettier + lint-staged
     │   ├── layout  //布局
     │   ├── react-app-env.d.ts
     │   ├── reportWebVitals.ts
-    │   ├── router //路由
+		│   ├── mock //数据模拟
+    │   ├── routes //路由
     │   ├── setupTests.ts
     │   ├── store //mobx状态管理
     │   ├── styles
@@ -49,5 +50,20 @@ eslint + husky + prettier + lint-staged
 
 ## todolist
 
-#### 1. 框架搭建：路由、组件懒加载、状态管理、代码风格管理、webpack配置、目录结构、ui组件库---->deadline:21/8/12
+#### 1. 框架搭建：deadline:21/8/12
+
+| todo               | solution                                | status |
+| ------------------ | --------------------------------------- | ------ |
+| 状态管理           | mobx                                    |        |
+| 路由               | react-router-dom                        | ✅      |
+| 路由嵌套动态可配置 |                                         | ✅      |
+| 路由懒加载         | lazy&Suspense                           | ✅      |
+| ui库               | antd                                    | ✅      |
+| css预处理          | scss                                    | ✅      |
+| js                 | typescript                              | ✅      |
+| 接口请求           | Fetch                                   |        |
+| 数据模拟           | Mockjs                                  | ✅      |
+| 代码风格管理       | eslint + husky + prettier + lint-staged | ✅      |
+
+​	
 

@@ -4,7 +4,7 @@ const Demo = () => (
     <div>
         Demo，1112233
         <DemoCom />
-        <Button>click</Button>
+        <Button type="primary">Primary Button</Button>
     </div>
 );
   

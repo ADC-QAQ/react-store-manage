@@ -26,6 +26,7 @@
       "@components/*": ["src/components/*"],
       "@views/*": ["src/views/*"],
       "@routes/*": ["src/routes/*"],
+      "@utils/*": ["src/utils/*"],
     },
   },
   "include": [

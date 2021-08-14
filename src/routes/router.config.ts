@@ -1,16 +1,19 @@
 import { lazy } from "react";
 
-const Demo = lazy(() => import('@views/demo'));
-
 const RouteConfig = [
     {
-        path: "/demo",
-        component: Demo,
+        path: "/list",
+        component: lazy(() => import('@views/list')),
         children: [
         ]
-    }, {
+    },{
+        path: "/home",
+        component: lazy(() => import('@views/home')),
+        children: [
+        ]
+    },{
         path: "/",
-        redirect: "/demo",
+        redirect: "/home",
     },
 ];
 

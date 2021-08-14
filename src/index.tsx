@@ -1,28 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import { Provider }git from "mobx-react";
+// import stores from "./stores";
 import App from './App';
-// import { observable, action, computed, autorun } from 'mobx';
 import reportWebVitals from './reportWebVitals';
 
-// class Store {
-//   @observable list = [];
-//   @computed get total() {
-//     return this.list.length;
-//   }
-//   @action change () {
-//     this.list.push();
-//   }
-// };
-// const mstore = new Store();
-
-// autorun(() => {
-//   console.log(mstore.total);
-// });
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <Provider store={stores}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  // </Provider>,
   document.getElementById('root')
 );
 reportWebVitals();

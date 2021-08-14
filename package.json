@@ -45,7 +45,6 @@
     "file-loader": "6.1.1",
     "fs-extra": "^9.0.1",
     "html-webpack-plugin": "4.5.0",
-    "husky": "^7.0.1",
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.0",
     "jest-circus": "26.6.0",
@@ -87,7 +86,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -126,7 +126,7 @@
       "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
     ],
     "testEnvironment": "jsdom",
-    "testRunner": "/Users/zhangjian/Desktop/my/project/react-store-manage/node_modules/jest-circus/runner.js",
+    "testRunner": "<rootDir>node_modules/jest-circus/runner.js",
     "transform": {
       "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/config/jest/babelTransform.js",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
@@ -164,12 +164,8 @@
       "react-app"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
+    "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
     "mockjs": "^1.1.0",
     "prettier": "^2.3.2"

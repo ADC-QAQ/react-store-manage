@@ -56,7 +56,7 @@ eslint + husky + prettier + lint-staged
 | ------------------ | --------------------------------------- | ------ |
 | 状态管理           | mobx                                    |        |
 | 路由               | react-router-dom                        | ✅      |
-| 路由嵌套动态可配置 |                                         | ✅      |
+| 路由嵌套动态可配置 | react-router-dom                        | ✅      |
 | 路由懒加载         | lazy&Suspense                           | ✅      |
 | ui库               | antd                                    | ✅      |
 | css预处理          | scss                                    | ✅      |
@@ -64,4 +64,4 @@ eslint + husky + prettier + lint-staged
 | 接口请求           | Axios                                   |        |
 | 数据模拟           | Mockjs                                  | ✅      |
 | 代码风格管理       | eslint + husky + prettier + lint-staged | ✅      |
-
+| 单元测试           | jest                                    | ✅      |

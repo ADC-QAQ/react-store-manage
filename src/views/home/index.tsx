@@ -1,13 +1,22 @@
+import React from 'react';
 import Jump from '@components/jump';
-// import { inject, observer } from 'mobx-react';
-// import homeStore from '../../stores';
+import { observer } from 'mobx-react';
+import { useHomeStore } from '@/stores';
+import { Button } from 'antd';
 
+interface Props{
+    
+}
 
-const Home = () => {
+const Home: React.FC = (Props) => {
+    const {
+        decrement,
+        count
+      } = useHomeStore();      
     return (<div>
         <Jump url="/list" buttonName="去列表页" />
+        <Button onClick={decrement}>{count}</Button>
     </div>);
 };
   
-// export default observer(Home);
-export default Home;
+export default observer(Home);

@@ -4,7 +4,7 @@ import RouteView from "@routes/RouteView";
 import { BrowserRouter } from "react-router-dom";
 import "./App.scss";
 
-const loading = () => <div className="loader" />
+const loading = () => <div className="loader" />;
 
 const App: FC = () => {
    return <BrowserRouter>

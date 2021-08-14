@@ -22,7 +22,7 @@
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
-      "@/": ["src/*"],
+      "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@views/*": ["src/views/*"],
       "@routes/*": ["src/routes/*"],

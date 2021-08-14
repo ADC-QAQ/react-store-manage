@@ -4,7 +4,7 @@ const paths = require('./paths');
 const $ = relativePath => path.resolve(paths.appSrc, relativePath);
 
 module.exports = {
-  '@/': paths.appSrc,
+  '@': paths.appSrc,
   '@components': $('components'),
   '@views': $('views'),
   '@routes': $('routes'),

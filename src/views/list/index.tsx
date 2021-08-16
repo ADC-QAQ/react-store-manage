@@ -1,12 +1,12 @@
 import React from 'react';
 import { observer, inject } from 'mobx-react';
-import { STORE_HOME, HomeStore   } from '@/stores';
+import { STORE_HOME, HomeStore } from '@/stores';
 import Jump from '@components/jump';
 import { Button } from 'antd';
 
 @inject(STORE_HOME)
 @observer
-class List extends React.Component<{ [STORE_HOME]: HomeStore }>  { 
+class List extends React.Component<{ [STORE_HOME]: HomeStore }> { 
   render() {
     const {
       count,

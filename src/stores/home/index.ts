@@ -2,7 +2,7 @@ import { makeAutoObservable} from 'mobx';
 import { IHomeStore } from './interface';
 
 
-export class HomeStore implements  IHomeStore {
+export class HomeStore implements IHomeStore {
   constructor() {
     makeAutoObservable(this);
   };

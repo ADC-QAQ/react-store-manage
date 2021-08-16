@@ -7,6 +7,22 @@
         }
     },
     "rules": {
-        "semi": "error"
+        // "semi": "error",
+        "no-var": 0, //禁用var，用let和const代替
+        "no-spaced-func": 2, //函数调用时 函数名与()之间不能有空格
+        "no-return-assign": 1, //return 语句中不能有赋值表达式
+        "no-script-url": 0, //禁止使用javascript:void(0)
+        "no-self-compare": 2, //不能比较自身
+        "no-redeclare": 2, //禁止重复声明变量
+        "no-multiple-empty-lines": [1, { "max": 2 }], //空行最多不能超过2行
+        "no-multi-spaces": 1, //不能用多余的空格
+        "no-lone-blocks": 2, //禁止不必要的嵌套块
+        "no-func-assign": 2, //禁止重复的函数声明
+        "no-fallthrough": 1, //禁止switch穿透
+        "no-eval": 1, //禁止使用eval
+        "no-else-return": 2, //如果if语句里面有return,后面不能跟else语句
+        "no-duplicate-case": 2, //switch中的case标签不能重复
+        "no-dupe-args": 2, //函数参数不能重复
+        "eqeqeq": 2 //必须使用全
     }
 }
